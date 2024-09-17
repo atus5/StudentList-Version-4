@@ -40,33 +40,39 @@ public class Student extends Person implements IPerson {
         this.major = major;
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }
 
+    @Override
     public String getFullName() {
         return fullName;
     }
 
+    @Override
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
 
+    @Override
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
+    @Override
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "id=" + id + ", fullName=" + fullName + ", dateOfBirth=" + dateOfBirth + "gpa=" + gpa + ", major=" + major + '}';
+        return "Student{" + "id=" + this.id + ", fullName=" + this.fullName + ", dateOfBirth=" + this.dateOfBirth + "gpa=" + this.gpa + ", major=" + this.major + '}';
     }
 
 //////////////////////////////////////////////////////////////////////////////

@@ -36,15 +36,15 @@ public class PersonList {
                 Student student = (Student) person;
                 if (id.equals(student.getId())) {
                     student.updatePerson(id);
-                   
+
                 }
             } else if (person instanceof Teacher) {
                 Teacher teacher = (Teacher) person;
                 if (id.equals(teacher.getId())) {
                     teacher.updatePerson(id);
-                   
+
                 }
-            }else{
+            } else {
                 System.out.println("Not found !");
             }
         }
@@ -103,4 +103,17 @@ public class PersonList {
 
     }
 
+    public Person findPersonById(String id) {
+        Iterator<Person> iter = personlist.iterator();
+        while (iter.hasNext()) {
+
+            Person p = iter.next();
+            if (id.equals(p.getId())) {
+                p.displayInfo();
+            }
+            return p;
+        }
+        return null;
+
+    }
 }

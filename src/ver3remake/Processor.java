@@ -1,7 +1,6 @@
 package ver3remake;
 
 import java.util.Scanner;
-import static ver3remake.Student.sc;
 
 public class Processor {
 

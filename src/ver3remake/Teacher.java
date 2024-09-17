@@ -34,33 +34,39 @@ public class Teacher extends Person implements IPerson {
         this.teachingSubject = teachingSubject;
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }
 
+    @Override
     public String getFullName() {
         return fullName;
     }
 
+    @Override
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
 
+    @Override
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
+    @Override
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
     @Override
     public String toString() {
-        return "Teacher{" + "department=" + department + ", teachingSubject=" + teachingSubject + "id=" + id + ", fullName=" + fullName + ", dateOfBirth=" + dateOfBirth + '}';
+        return "Teacher{" + "department=" + this.department + ", teachingSubject=" + this.teachingSubject + "id=" + this.id + ", fullName=" + this.fullName + ", dateOfBirth=" + this.dateOfBirth + '}';
     }
 
 ///////////////////////////////////////////////////////////////////////
